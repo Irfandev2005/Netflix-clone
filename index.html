@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Netflix - Watch TV Shows, Movies and More</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="logo.png" class="logo" alt="Netflix Logo">
+            <div>
+                <div class="lang-container">
+                    <button class="lang">heyy <img src="languages.png" height="50px " width="50px" alt="Language"></button>
+                    <ul class="lang-dropdown">
+                        <li data-lang="en">English</li>
+                        <li data-lang="ta">தமிழ்</li>
+                        <li data-lang="hi">हिंदी</li>
+                        <li data-lang="ml">മലയാളം</li>
+                        <li data-lang="te">తెలుగు</li>
+
+                    </ul>
+                </div>
+               <a href="signin.html"> <button>Sign In</button></a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1 data-i18n="hero.h1">Unlimited movies, TV shows, and more</h1>
+            <h2 data-i18n="hero.h2">Watch anywhere. Cancel anytime.</h2>
+            <p data-i18n="hero.p">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="hero-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit" data-i18n="hero.btn">Get Started ></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sample Content Rows -->
+    <section class="content-section">
+        <h2 class="row-title" data-i18n="trending">Trending Now</h2>
+        <div class="row">
+            <div class="poster"><img src="feature-1.png" alt="Trending Movie 1"></div>
+            <div class="poster"><img src="feature-2.png" alt="Trending Movie 2"></div>
+            <div class="poster"><img src="feature-3.png" alt="Trending Movie 3"></div>
+            <div class="poster"><img src="feature-4.png" alt="Trending Movie 4"></div>
+            <div class="poster"><img src="feature-1.png" alt="Trending Movie 5"></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="row-title" data-i18n="topPicks">Top Picks For You</h2>
+        <div class="row">
+            <div class="poster"><img src="feature-4.png" alt="Top Pick 1"></div>
+            <div class="poster"><img src="feature-2.png" alt="Top Pick 2"></div>
+            <div class="poster"><img src="feature-3.png" alt="Top Pick 3"></div>
+            <div class="poster"><img src="feature-2.png" alt="Top Pick 4"></div>
+            <div class="poster"><img src="feature-1.png" alt="Top Pick 5"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="feature-1.png" alt="TV Feature">
+            <div>
+                <h2 data-i18n="features.tv.title">Enjoy on your TV</h2>
+                <p data-i18n="features.tv.desc">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div>
+                <h2 data-i18n="features.download.title">Download your shows to watch offline</h2>
+                <p data-i18n="features.download.desc">Save your favorites easily and always have something to watch.</p>
+            </div>
+            <img src="feature-2.png" alt="Download Feature">
+        </div>
+        <div class="feature">
+            <img src="feature-3.png" alt="Watch Everywhere">
+            <div>
+                <h2 data-i18n="features.everywhere.title">Watch everywhere</h2>
+                <p data-i18n="features.everywhere.desc">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div>
+                <h2 data-i18n="features.kids.title">Create profiles for kids</h2>
+                <p data-i18n="features.kids.desc">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+            </div>
+            <img src="feature-4.png" alt="Kids Profiles">
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans">
+        <div class="plans-container">
+            <h2 class="plans-title animate-slide-up" data-i18n="plans.title">Choose the plan that's right for you</h2>
+            <div class="plans-grid">
+                <div class="plan-card animate-slide-up" style="animation-delay: 0.2s;">
+                    <h3 data-i18n="plans.basic.name">Basic</h3>
+                    <p class="price" data-i18n="plans.basic.price">₹199/month</p>
+                    <ul>
+                        <li data-i18n="plans.basic.features.0">HD quality</li>
+                        <li data-i18n="plans.basic.features.1">1 screen at a time</li>
+                        <li data-i18n="plans.basic.features.2">Download on 1 device</li>
+                    </ul>
+                    <button class="plan-btn" data-i18n="plans.basic.btn">Subscribe Now</button>
+                </div>
+                <div class="plan-card popular animate-slide-up" style="animation-delay: 0.4s;">
+                    <h3 data-i18n="plans.standard.name">Standard</h3>
+                    <p class="price" data-i18n="plans.standard.price">₹499/month</p>
+                    <ul>
+                        <li data-i18n="plans.standard.features.0">Full HD quality</li>
+                        <li data-i18n="plans.standard.features.1">2 screens at a time</li>
+                        <li data-i18n="plans.standard.features.2">Download on 2 devices</li>
+                    </ul>
+                    <button class="plan-btn" data-i18n="plans.standard.btn">Most Popular</button>
+                </div>
+                <div class="plan-card animate-slide-up" style="animation-delay: 0.6s;">
+                    <h3 data-i18n="plans.premium.name">Premium</h3>
+                    <p class="price" data-i18n="plans.premium.price">₹649/month</p>
+                    <ul>
+                        <li data-i18n="plans.premium.features.0">UHD 4K + HDR</li>
+                        <li data-i18n="plans.premium.features.1">4 screens at a time</li>
+                        <li data-i18n="plans.premium.features.2">Download on 4 devices</li>
+                    </ul>
+                    <button class="plan-btn" data-i18n="plans.premium.btn">Subscribe Now</button>
+                </div>
+            </div>
+            <p class="plans-note animate-slide-up" style="animation-delay: 0.8s;" data-i18n="plans.note">HD/4K quality requires supported device and internet connection.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section with Integrated Accordion -->
+    <section class="faq">
+        <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+        <div class="accordion" id="netflixAccordion">
+            <div class="accordion-item animate-fade-in" style="animation-delay: 0.1s;">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <span data-i18n="faq.whatIsNetflix">What is Netflix?</span>
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#netflixAccordion">
+                    <div class="accordion-body">
+                        <span data-i18n="faq.whatIsNetflix_desc">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item animate-fade-in" style="animation-delay: 0.2s;">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <span data-i18n="faq.howMuch">How much does Netflix cost?</span>
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#netflixAccordion">
+                    <div class="accordion-body">
+                        <span data-i18n="faq.howMuch_desc">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item animate-fade-in" style="animation-delay: 0.3s;">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <span data-i18n="faq.where">Where can I watch?</span>
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#netflixAccordion">
+                    <div class="accordion-body">
+                        <span data-i18n="faq.where_desc">Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item animate-fade-in" style="animation-delay: 0.4s;">
+                <h2 class="accordion-header" id="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <span data-i18n="faq.howCancel">How do I cancel?</span>
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#netflixAccordion">
+                    <div class="accordion-body">
+                        <span data-i18n="faq.howCancel_desc">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item animate-fade-in" style="animation-delay: 0.5s;">
+                <h2 class="accordion-header" id="faq5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <span data-i18n="faq.whatWatch">What can I watch on Netflix?</span>
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#netflixAccordion">
+                    <div class="accordion-body">
+                        <span data-i18n="faq.whatWatch_desc">Watch TV shows and movies recommended for you, including award-winning Netflix Originals and all your favorite Netflix series and movies.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-bottom">
+            <p><span data-i18n="faq.needHelp">Need help?</span> <a href="#" data-i18n="footer.contactUs">Contact us</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p data-i18n="footer.questions">Questions? Call 000-800-040-1843</p>
+            <ul>
+                <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+                <li><a href="#" data-i18n="footer.helpCentre">Help Centre</a></li>
+                <li><a href="#" data-i18n="footer.account">Account</a></li>
+                <li><a href="#" data-i18n="footer.mediaCentre">Media Centre</a></li>
+                <li><a href="#" data-i18n="footer.investor">Investor Relations</a></li>
+                <li><a href="#" data-i18n="footer.jobs">Jobs</a></li>
+                <li><a href="#" data-i18n="footer.waysToWatch">Ways to Watch</a></li>
+                <li><a href="#" data-i18n="footer.terms">Terms of Use</a></li>
+                <li><a href="#" data-i18n="footer.privacy">Privacy</a></li>
+                <li><a href="#" data-i18n="footer.cookies">Cookie Preferences</a></li>
+                <li><a href="#" data-i18n="footer.corporate">Corporate Information</a></li>
+                <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+            </ul>
+            <div class="lang-container">
+                <button class="lang"><img src="languages.png" height="50px " width="50px" alt="Language"></button>
+                <ul class="lang-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="ta">தமிழ்</li>
+                    <li data-lang="hi">हिंदी</li>
+                    <li data-lang="ml">മലയാളം</li>
+                    <li data-lang="te">తెలుగు</li>
+                </ul>
+            </div>
+            <p>Netflix India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
